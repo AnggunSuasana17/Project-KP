@@ -11,6 +11,7 @@
 				<small id="helpId" class="text-muted"><?php echo form_error('isi', '<div class="alert alert-danger mt-2">', '</div>'); ?></small>
 			</div>
 		</div>
+		
         <div class="form-group row">
 			<label for="foto" class="col-sm-3 col-form-label">Foto</label>
 			<div class="col-sm-8">

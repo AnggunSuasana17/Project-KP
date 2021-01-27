@@ -17,8 +17,10 @@
 			<hr>
             <?php if($pengaduan->status == "ditanggapi") { ?>
 			<p class="card-text">
-				<h5>Tanggapan </h5>
-				<img class="img-fluid" src="<?= base_url('assets/gambar/') . $pengaduan->foto ?>" alt="Card image cap">
+				<h5>Tanggapan : </h5>
+				<img class="img-fluid" src="<?= base_url('assets/gambar/') . $kelola->foto ?>" alt="Card image cap">
+				
+	
 				<p><?= $tanggapan->tanggapan ?></p>
             </p>
             <?php } else if($pengaduan->status == "selesai") { ?>

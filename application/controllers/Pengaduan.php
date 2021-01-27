@@ -32,7 +32,7 @@ class Pengaduan extends MY_Controller {
         
         if ($this->form_validation->run() == TRUE) {
             
-            $config['upload_path'] = './assets/gambar';
+            $config['upload_path'] = './assets/gambar'; 
             $config['allowed_types'] = 'jpeg|jpg|png';
             $config['max_size']  = '100';
             
@@ -63,7 +63,9 @@ class Pengaduan extends MY_Controller {
                     redirect(base_url('pengaduan/tambah'),'refresh');
                 }
             }
-        }else{
+        }else
+        
+        {
             $data = [
                         "title"             => 'Tambah pengaduan',
                         "breadcumb"         => 'Pengaduan / tambah',
