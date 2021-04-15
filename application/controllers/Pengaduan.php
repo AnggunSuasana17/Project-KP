@@ -34,7 +34,11 @@ class Pengaduan extends MY_Controller {
             
             $config['upload_path'] = './assets/gambar'; 
             $config['allowed_types'] = 'jpeg|jpg|png';
-            $config['max_size']  = '100';
+            $config['create_thumb'] = TRUE;
+            $config['maintain_ratio'] = TRUE;
+            $config['width'] = 75;
+            $config['height'] = 50;
+            $config['max_size']  = '1000';
             
             $this->load->library('upload', $config);
             

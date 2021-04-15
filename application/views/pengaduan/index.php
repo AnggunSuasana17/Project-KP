@@ -19,10 +19,11 @@
 				<tbody>
 					<?php $no = 1; foreach($pengaduan as $list) { ?>
 					<tr>
-						<td><?= $no ?></td>
+						<td><?= $no++ ?></td>
 						<td><?= $list['tgl'] ?></td>
 						<td><?= $list['isi_laporan'] ?></td>
-						<td><img src="./assets/gambar/<?= $list['foto'] ?>" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
+						<td><img src="./assets/gambar/<?= $list['foto'] ?>
+						"class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
 						<td class="label label-primary"><?= $list['status'] ?></td>
 						<td>
 							<a href="<?= base_url('pengaduan/detail/') . $list['id'] ?>" class="btn btn-primary">Detail</a>

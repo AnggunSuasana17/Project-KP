@@ -50,6 +50,10 @@ class Kelola extends MY_Controller {
 
             $config['upload_path'] = './assets/gambar';
             $config['allowed_types'] = 'jpeg|jpg|png';
+            $config['create_thumb'] = TRUE;
+            $config['maintain_ratio'] = TRUE;
+            $config['width'] = 75;
+            $config['height'] = 50;
             $config['max_size']  = '1000';
             
             $this->load->library('upload', $config);
@@ -114,6 +118,7 @@ class Kelola extends MY_Controller {
         $data = [
             'status'    => 'selesai'
         ];
+
         $ubah = $this->M_all->ubah('tb_pengaduan ', $data, $where);
         if($ubah){
             echo "<script>";
